@@ -1,10 +1,11 @@
 name: Crowdin Upload
 
-on:
-  push:
-    branches:
-      - '*-dev'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - '*-dev'
+# 
 jobs:
 
   synchronize-with-crowdin:

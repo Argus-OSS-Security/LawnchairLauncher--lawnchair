@@ -1,25 +1,26 @@
 name: Release update
 
-on:
-  workflow_dispatch:
-    inputs:
-      artifactName:
-        description: Artifact name
-        type: string
-        required: true
-      tagName:
-        description: Tag name
-        type: string
-        required: true
-      prerelease:
-        description: Prerelease
-        type: boolean
-        required: true
-      releaseName:
-        description: Release name
-        type: string
-        required: true
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       artifactName:
+#         description: Artifact name
+#         type: string
+#         required: true
+#       tagName:
+#         description: Tag name
+#         type: string
+#         required: true
+#       prerelease:
+#         description: Prerelease
+#         type: boolean
+#         required: true
+#       releaseName:
+#         description: Release name
+#         type: string
+#         required: true
+# 
 jobs:
   build-release-apk:
     runs-on: ubuntu-latest

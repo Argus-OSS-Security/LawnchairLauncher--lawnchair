@@ -1,10 +1,11 @@
 name: Close low effort issues
 
-on:
-  issues:
-    types:
-      - opened
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issues:
+#     types:
+#       - opened
+# 
 jobs:
   check_issue_quality:
     runs-on: ubuntu-latest

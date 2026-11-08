@@ -1,8 +1,9 @@
 name: Build release APK
 
-on:
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+# 
 jobs:
   build-release-apk:
     runs-on: ubuntu-latest
